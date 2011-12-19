@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+body {
+	 font-size: 14px; 
+}
+table{
+	border: 1px solid #AAAAAA;
+}
+td{
+	border: 1px solid #AAAAAA;
+	padding: 5px 5px 5px 5px ;
+	padding-right: 150px;
+}
+.customToolTipClass {
+	background:green;
+}
+.customToolTipClass-title{
+	font-style:italic;
+	font-size:xx-large;
+	color:blue;
+}
+.customToolTipClass-content{
+	font-family:cursive;
+}

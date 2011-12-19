@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link type="text/css" href="../css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+<link type="text/css" href="../css/main.css" rel="stylesheet" />
+<link type="text/css" href="../src/css/jquery.ui.tooltip.css" rel="stylesheet" />
+<script type="text/javascript" src="../lib/jQuery/jquery.js"></script>
+<script type="text/javascript" src="../lib/jQuery/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="../src/jquery.ui.tooltip.js"></script>
+<title>Tool tip</title>
+</head>
+<body>
+<script type="text/javascript"
+  src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<div id="switcher"></div>
+<script>
+  $(document).ready(function(){
+    $('#switcher').themeswitcher();
+  });
+  </script>
+  <h2 style="text-align:center;">jQuery UI - Tool tip plugin</h2>
+  <table width="100%" border="1">
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#simpleToolTip").tooltip({
+	'content':'A simple Tooltip',
+});</pre></td>
+			<td width="50%"><span id="simpleToolTip" title="Tooltip from title attribute">Hover Over me for a simple tooltip</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#titleToolTip").tooltip({
+	'title':'Title',
+	'content':'A tooltip with title'
+});</pre></td>
+			<td width="50%"><span id="titleToolTip">Hover Over me to see a tooltip with title</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#"speedToolTip"").tooltip({
+	'content':'A tooltip with slow fadeout',
+	'speed': 3000
+});</pre></td>
+			<td width="50%"><span id="speedToolTip">Hover Over me to see the toolTip with speed decreased</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br /> <pre>
+$("#customClassToolTip").tooltip({
+	'title':'Title',
+	'content':'A tooltip with custom class',
+	'toolTipClass':'customToolTipClass'
+});
+
+.customToolTipClass {
+	background:green;
+}
+.customToolTipClass-title{
+	font-style:italic;
+	font-size:xx-large;
+	color:blue;
+}
+.customToolTipClass-content{
+	font-family:cursive;
+}
+</pre></td>
+			<td width="50%"><span id="customClassToolTip">Hover over me to see a tooltip with custom class</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#effectTooltip").tooltip({
+	'content':'A tooltip with effect',
+	'effect':'size'
+});
+
+</pre></td>
+			<td width="50%"><span id="effectTooltip">Hover Over me to see effect in tooltip</span></td>
+		</tr>
+	</table>
+<script type="text/javascript">
+$("#simpleToolTip").tooltip({
+	'content':'A simple Tooltip', 
+});
+$("#titleToolTip").tooltip({
+	'title':'Title',
+	'content':'A tooltip with title'
+});
+$("#speedToolTip").tooltip({
+	'content':'A tooltip with title',
+	'speed': 3000
+});
+$("#customClassToolTip").tooltip({
+	'title':'Title',
+	'content':'A tooltip with custom class',
+	'toolTipClass':'customToolTipClass'
+});
+$("#effectTooltip").tooltip({
+	'content':'A tooltip with effect',
+	'effect':'scale'
+});
+</script>
+</body>
+</html>

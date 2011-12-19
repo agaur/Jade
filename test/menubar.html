@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="../lib/jQuery/jquery.js"></script>
+<script type="text/javascript" src="../lib/jQuery/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="../src/jquery.ui.menubar.js"></script>
+<link type="text/css" href="../css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+<link type="text/css" href="../css/main.css" rel="stylesheet" />
+<link type="text/css" href="../src/css/jquery.ui.menubar.css" rel="stylesheet" />
+<title>Test Page</title>
+</head>
+<body>
+
+<script type="text/javascript">
+		$(function() {
+			$("#menu").menubar();
+		});
+	</script>
+<script type="text/javascript"
+  src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<div id="switcher"></div>
+<script>
+  $(document).ready(function(){
+    $('#switcher').themeswitcher();
+  });
+  </script>
+  
+<table>
+<tr>
+<td>
+<ul id="menu">
+	<li>
+		<a href="#File">File</a>
+		<ul>
+			<li><a href="#Open...">Open...</a></li>
+			<li class="ui-state-disabled">Open recent...</li>
+
+			<li><a href="#Save">Save</a></li>
+			<li><a href="#Save as...">Save as...</a></li>
+			<li><a href="#Close">Close</a></li>
+			<li><a href="#Quit">Quit</a></li>
+		</ul>
+	</li>
+	<li>
+
+		<a href="#Edit">Edit</a>
+		<ul>
+			<li><a href="#Copy">Copy</a></li>
+			<li><a href="#Cut">Cut</a></li>
+			<li class="ui-state-disabled">Paste</li>
+		</ul>
+	</li>
+
+	<li>
+		<a href="#View">View</a>
+		<ul>
+			<li><a href="#Fullscreen">Fullscreen</a></li>
+			<li><a href="#Fit into view">Fit into view</a></li>
+			<li>
+				<a href="#Encoding">Encoding</a>
+
+				<ul>
+					<li><a href="#Auto-detect">Auto-detect</a></li>
+					<li><a href="#UTF-8">UTF-8</a></li>
+					<li>
+					  <a href="#UTF-16">UTF-16</a>
+				      <ul>
+				         <li><a href="#Option 1">Option 1</a></li>
+
+				         <li><a href="#Option 2">Option 2</a></li>
+				         <li><a href="#Option 3">Option 3</a></li>
+				         <li><a href="#Option 4">Option 4</a></li>
+				      </ul>
+				   </li>
+				</ul>
+			</li>
+
+			<li><a href="#Customize...">Customize...</a></li>
+		</ul>
+	</li>
+</ul>
+</td>
+<td>
+<ul id="">
+	<li>
+		<a href="#File">File</a>
+		<ul>
+			<li><a href="#Open...">Open...</a></li>
+			<li class="ui-state-disabled">Open recent...</li>
+
+			<li><a href="#Save">Save</a></li>
+			<li><a href="#Save as...">Save as...</a></li>
+			<li><a href="#Close">Close</a></li>
+			<li><a href="#Quit">Quit</a></li>
+		</ul>
+	</li>
+	<li>
+
+		<a href="#Edit">Edit</a>
+		<ul>
+			<li><a href="#Copy">Copy</a></li>
+			<li><a href="#Cut">Cut</a></li>
+			<li class="ui-state-disabled">Paste</li>
+		</ul>
+	</li>
+
+	<li>
+		<a href="#View">View</a>
+		<ul>
+			<li><a href="#Fullscreen">Fullscreen</a></li>
+			<li><a href="#Fit into view">Fit into view</a></li>
+			<li>
+				<a href="#Encoding">Encoding</a>
+
+				<ul>
+					<li><a href="#Auto-detect">Auto-detect</a></li>
+					<li><a href="#UTF-8">UTF-8</a></li>
+					<li>
+					  <a href="#UTF-16">UTF-16</a>
+				      <ul>
+				         <li><a href="#Option 1">Option 1</a></li>
+
+				         <li><a href="#Option 2">Option 2</a></li>
+				         <li><a href="#Option 3">Option 3</a></li>
+				         <li><a href="#Option 4">Option 4</a></li>
+				      </ul>
+				   </li>
+				</ul>
+			</li>
+
+			<li><a href="#Customize...">Customize...</a></li>
+		</ul>
+	</li>
+</ul></td>
+</tr>
+</table>
+</body>
+</html>

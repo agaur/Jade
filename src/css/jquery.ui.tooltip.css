@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+.ui-tooltip {
+    box-shadow: 0 0 5px #AAAAAA;
+    padding: 8px;
+    position: absolute;
+    z-index: 9999;
+    display:inline-block;
+}
+.ui-tooltip-title{
+	text-align: center;
+	font-size:large;
+	padding-bottom: 4px;
+}
+.ui-tooltip-content{
+	
+}

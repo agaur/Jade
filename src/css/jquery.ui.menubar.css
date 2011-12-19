@@ -1,0 +1,55 @@
+@CHARSET "ISO-8859-1";
+
+ul.cssMenu ul {
+    display: none;
+}
+ul.cssMenu li:hover > ul {
+    display: block;
+}
+ul.cssMenu ul {
+    left: -1px;
+    position: absolute;
+    top: 98%;
+}
+ul.cssMenu ul ul {
+    left: 98%;
+    position: absolute;
+    top: -2px;
+}
+ul.cssMenu, ul.cssMenu ul {
+    margin: 0;
+    padding: 0 0px 0px 0;
+}
+ul.cssMenu {
+    display: block;
+    float: left;
+}
+ul.cssMenu li {
+    display: block;
+}
+ul.cssMenu a{
+    display: block;
+    padding: 4px 4px; 
+}
+ul.cssMenu li {
+    float: left;
+}
+ul.cssMenu ul li {
+    float: none;
+}
+ul.cssMenu ul a {
+    text-align: left;
+    white-space: nowrap;
+}
+ul.cssMenu ul li.sep span {
+    width: 80%;
+}
+ul.cssMenu li:hover {
+    position: relative;
+}
+ul.cssMenu li a:hover {
+    position: relative;
+}
+ul.cssMenu a:hover ul, ul.cssMenu a:hover a:hover ul, ul.cssMenu a:hover a:hover a:hover ul {
+    display: block;
+}

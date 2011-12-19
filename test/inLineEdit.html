@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jQuery UI In Line Edit</title>
+<link type="text/css" href="../css/jquery-ui-1.8.16.custom.css"
+	rel="stylesheet" />
+<link type="text/css" href="../css/main.css" rel="stylesheet" />
+<style>
+.heading {
+	color: #800000;
+	font-weight: bold
+}
+</style>
+</head>
+<body >
+	<center>
+		<h1>
+			inLine Edit <i>(a jQuery UI widget)</i>
+		</h1>
+	</center>
+	
+<div id="switcher"></div>
+	<table width="100%" border="1">
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textSpan").inLineEditor({
+	'type':'text',
+	'event':'mouseover'
+});</pre></td>
+			<td width="50%"><span id="textSpan">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textAreaSpan").inLineEditor({
+	'type':'textarea'
+});</pre></td>
+			<td width="50%"><span id="textAreaSpan">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textOnblurSave").inLineEditor({
+	'type':'text',
+	'onblur':'save'
+});</pre></td>
+			<td width="50%"><span id="textOnblurSave">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br /> <pre>
+$("#textOnblurCancel").inLineEditor({
+	'type':'text',
+	'onblur':'cancel'
+});
+</pre></td>
+			<td width="50%"><span id="textOnblurCancel">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textSubmit").inLineEditor({
+	'type':'text',
+	'submit':'Save'
+});
+</pre></td>
+			<td width="50%"><span id="textSubmit">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textCancel").inLineEditor({
+	'type':'text',
+	'cancel':'Cancel'
+});</pre></td>
+			<td width="50%"><span id="textCancel">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textSaveCancel").inLineEditor({
+	'type':'text',
+	'submit':'Save',
+	'cancel':'Cancel'
+});</pre></td>
+			<td width="50%"><span id="textSaveCancel">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#target").inLineEditor({
+	'target':'www.google.com',
+	'type':'text',
+	'submit':'Save',
+	'cancel':'Cancel'
+});
+					</pre></td>
+			<td width="50%"><span id="target">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#targetParam").inLineEditor({ 
+	type:'select', 
+	event: 'click',
+	toolTip:'I am a select',  
+	data:{
+		"something":"Something",
+		"some other thing":"Some Other Thing",
+		"yet another thing":"Yet Another Thing"
+		},
+	submit:'Save',
+	cancel:'Cancel'
+});
+		</pre></td>
+			<td width="50%"><span id="targetParam">Pramati</span></td>
+		</tr>
+		<tr>
+			<td align="left"><span class="heading">Code</span> <br />
+			<pre>
+$("#textRemove").inLineEditor({
+			'submit' : 'Save',
+			'cancel' : 'Cancel',
+			'remove' : 'Delete'
+		});
+		</pre></td>
+			<td width="50%"><span id="textRemove">Pramati</span></td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="../lib/jQuery/jquery.js"></script>
+	<script type="text/javascript"
+		src="../lib/jQuery/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="../src/jquery.ui.inLineEditor.js"></script>
+	<script type="text/javascript" src="../src/menubar.js"></script>
+	<script type="text/javascript"
+  src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<script>
+  $(document).ready(function(){
+    $('#switcher').themeswitcher();
+  });
+  </script>
+	<script type="text/javascript">
+		$("#textSpan").inLineEditor({
+			'type' : 'text',
+			'event' : 'mouseover'
+		});
+		$("#textAreaSpan").inLineEditor({
+			'type' : 'textarea'
+		});
+		$("#textOnblurSave").inLineEditor({
+			'type' : 'text',
+			'onblur' : 'save'
+		});
+		$("#textOnblurCancel").inLineEditor({
+			'type' : 'text',
+			'onblur' : 'cancel'
+		});
+		$("#textSubmit").inLineEditor({
+			'type' : 'text',
+			'onblur' : 'cancel',
+			'submit' : 'Save'
+		});
+		$("#textCancel").inLineEditor({
+			'type' : 'text',
+			'onblur' : 'cancel',
+			'cancel' : 'Cancel'
+		});
+		$("#textSaveCancel").inLineEditor({
+			'type' : 'text',
+			'onblur' : 'cancel',
+			'submit' : 'Save',
+			'cancel' : 'Cancel'
+		});
+		$("#target").inLineEditor({
+			'target' : 'www.google.com',
+			'type' : 'text',
+			'onblur' : 'save',
+			'submit' : 'Ok',
+			'cancel' : 'Not ok'
+		});
+		$("#targetParam").inLineEditor({
+			type : 'select',
+			event : 'click',
+			toolTip : 'I am a select',
+			data : {
+				"something" : "Something",
+				"some other thing" : "Some Other Thing",
+				"yet another thing" : "Yet Another Thing"
+			},
+			submit : 'Save',
+			cancel : 'Cancel'
+		});
+		$("#textRemove").inLineEditor({
+			'onblur' : 'save',
+			'submit' : 'Save',
+			'cancel' : 'Cancel',
+			'remove' : 'Delete'
+		});
+		/* 		alert($("#target").inLineEditor("type")); */
+	</script>
+</body>
+</html>
