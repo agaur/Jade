@@ -1,0 +1,2 @@
+This project is an attempt of creating the widgets misssing in the jquery UI: http://jqueryui.com/
+To check the widgets go to test folder and open up the HTML files in the browser. The usage is self explainatory in these files. 
